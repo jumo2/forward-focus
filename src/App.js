@@ -19,7 +19,7 @@ function App() {
   </Toolbar>
 </AppBar>
     <Container maxWidth="xl" className="App"> 
-        <img src={logo}></img>
+        <img className="Logo" src={logo}></img>
     </Container>
     </div>
   );

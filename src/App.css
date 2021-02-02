@@ -1,4 +1,10 @@
 .App {
   text-align: center;
   background-color: #282c34 !important;
+  max-height: 100vh !important;
+}
+
+.Logo {
+    max-height: 30vh;
+    align-self: flex-end;
 }
