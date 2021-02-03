@@ -8,3 +8,20 @@
     max-height: 50vh;
     align-self: flex-end;
 }
+
+.join-now-button {
+    align-self: center !important;
+    border-color: red !important;
+    color: red !important;
+}
+
+.card-action-custom{
+    justify-content: center;
+    align-self: center !important;
+    align-content: center !important;
+}
+
+.card-dark{
+    background-color: #282c34 !important;
+    color: white !important;
+}
