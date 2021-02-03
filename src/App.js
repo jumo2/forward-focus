@@ -1,7 +1,7 @@
 import './App.css';
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
-import logo from './assets/FF_NoBack_FF_Only.svg'
+import logo from './assets/Ff_Everywhere.svg'
 import appBarLogo from './assets/FF_NoBack_FullWord.svg'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -27,8 +27,9 @@ function App() {
                
             </Grid>
             <Grid 
-            justify="flex-start"
-            alignItems="center"
+            direction="row"
+            justify="flex-end"
+            alignItems="flex-end"
             item xs={12} sm={6}>
                 <img className="Logo" src={logo}></img>
             </Grid>
