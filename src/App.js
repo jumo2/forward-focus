@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
 import logo from './assets/FF_NoBack_FF_Only.svg'
 import appBarLogo from './assets/FF_NoBack_FullWord.svg'
-import wave from './assets/Wave.svg'
+import blob from './assets/blob.svg'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
@@ -62,7 +62,7 @@ function App() {
                     <Grid justify="flex-end" alignItems="flex-end"
                      item xs={12} sm={4}>
                          <Card  elevation={3}>
-                            <CardContent>
+                            <CardContent >
                                 <h2>Leadership Coaching</h2>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                             </CardContent>
@@ -86,6 +86,9 @@ function App() {
                             </CardContent>
                          </Card>
                      </Grid>
+                </Grid>
+                <Grid>
+                    
                 </Grid>               
             </Container>
 
