@@ -25,3 +25,19 @@
     background-color: #282c34 !important;
     color: white !important;
 }
+
+.wave-container {
+  position: relative;
+  background: white;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wave-footer-container{
+  position: relative;
+  background: white;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
