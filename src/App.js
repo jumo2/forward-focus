@@ -83,7 +83,7 @@ function App() {
                     </Grid>
                 </Grid>
 
-                <br></br>
+
 
                 {/* <Grid container spacing={2}>
                     <Grid justify="flex-end" alignItems="flex-end"
@@ -117,7 +117,9 @@ function App() {
                 <Grid>
                     
                 </Grid> */}
+                <br></br>
             </Container>
+
 
             {/* About Section */}
 
@@ -144,11 +146,31 @@ function App() {
                         <img src="https://via.placeholder.com/350"></img>
                     </Grid>
                 </Grid>
+                <br></br>
             </Container>
 
+            <Container  >
+                <Grid
+                    container
+                    spacing={5}
+                    direction="row"
+                    justify="center"
+                    alignItems="flex-start"
+                >
+                    <Grid direction="column" justify="flex-end" alignItems="center"
+                        item xs={12} sm={6}>
+                            <br></br>
+                            <img className="Logo" src={logo}></img>
+                        </Grid>
+                    <Grid direction="column" justify="flex-end" alignItems="flex-start"
+                        item xs={12} sm={6}>
+                            <h1>Contact</h1>
+                        </Grid>
+                </Grid>
+            </Container>
 
             <div className="wave-footer-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,250.7C480,256,600,256,720,234.7C840,213,960,171,1080,138.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,250.7C480,256,600,256,720,234.7C840,213,960,171,1080,138.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
             </div>
 
         </div>

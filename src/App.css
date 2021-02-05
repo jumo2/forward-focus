@@ -6,11 +6,10 @@
 
 .section{
     min-height: 80vh;
-    min-width: 100vw;
 }
 
 .Logo {
-    max-height: 35vh;
+    max-height: 40vh;
     align-self: flex-end;
 }
 
@@ -46,8 +45,8 @@
 
 .wave-footer-container{
   position: relative;
-  background: white;
-  color: #FFF;
+  background:#282c34;
+  color:#282c34;
   text-align: center;
   overflow: hidden;
 }
