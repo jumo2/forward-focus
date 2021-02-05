@@ -1,4 +1,6 @@
 import './App.css';
+import Contact from './comps/Contact'
+import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
 import logo from './assets/FF_NoBack_FF_Only.svg'
@@ -24,10 +26,11 @@ function App() {
                     <IconButton edge="start" color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <img src={appBarLogo} />
+                    <img className="app-bar-logo" src={appBarLogo} />
                 </Toolbar>
             </AppBar>
-            <Container className="section" maxWidth="md" className="App">
+            <div className="section section-dark" maxWidth="md" className="App">
+                <Container>
                 <Grid container spacing={2}>
                     <Grid justify="flex-end" alignItems="flex-end"
                         item xs={12} sm={12}>
@@ -49,15 +52,16 @@ function App() {
                         <img className="Logo" src={logo}></img>
                     </Grid>*/}
                 </Grid>
-
-            </Container>
-            <div className="wave-container">
+                    </Container>
+            </div>
+            <div className="wave-container" elevation={0}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#282c34" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,250.7C480,256,600,256,720,234.7C840,213,960,171,1080,138.7C1200,107,1320,85,1380,74.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
             </div>
 
 
             {/* Services Section */}
-            <Container className="section" style={{ background: "white" }}>
+            <div className="section" style={{ background: "white" }} elevation={0}>
+                <Container>
                 <Grid
                     container
                     spacing={0}
@@ -119,11 +123,13 @@ function App() {
                 </Grid> */}
                 <br></br>
             </Container>
+            </div>
 
 
             {/* About Section */}
 
-            <Container className="section" style={{ background: "white" }}>
+            <div className="section" style={{ background: "white" }}>
+                <Container>
                 <Grid
                     container
                     spacing={4}
@@ -147,29 +153,12 @@ function App() {
                     </Grid>
                 </Grid>
                 <br></br>
-            </Container>
-
-            <Container  >
-                <Grid
-                    container
-                    spacing={5}
-                    direction="row"
-                    justify="center"
-                    alignItems="flex-start"
-                >
-                    <Grid direction="column" justify="flex-end" alignItems="center"
-                        item xs={12} sm={6}>
-                            <br></br>
-                            <img className="Logo" src={logo}></img>
-                        </Grid>
-                    <Grid direction="column" justify="flex-end" alignItems="flex-start"
-                        item xs={12} sm={6}>
-                            <h1>Contact</h1>
-                        </Grid>
-                </Grid>
-            </Container>
-
+                </Container>
+            </div>
+                
             <div className="wave-footer-container">
+                <br></br>
+                <Contact />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,250.7C480,256,600,256,720,234.7C840,213,960,171,1080,138.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
             </div>
 
