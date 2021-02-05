@@ -4,9 +4,18 @@
   max-height: 100vh !important;
 }
 
+.section{
+    min-height: 100vh;
+}
+
 .Logo {
     max-height: 35vh;
     align-self: flex-end;
+}
+
+.analysis-svg{
+    align-self: right
+
 }
 
 .join-now-button {
