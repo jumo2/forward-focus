@@ -83,7 +83,7 @@ function App() {
                     </Grid>
                 </Grid>
 
-                    <br></br>
+                <br></br>
 
                 {/* <Grid container spacing={2}>
                     <Grid justify="flex-end" alignItems="flex-end"
@@ -117,20 +117,20 @@ function App() {
                 <Grid>
                     
                 </Grid> */}
-                </Container>
+            </Container>
 
-{/* About Section */}
+            {/* About Section */}
 
-<Container className="section" style={{background: "white"}}>
-<Grid
+            <Container className="section" style={{ background: "white" }}>
+                <Grid
                     container
-                    spacing={0}
+                    spacing={4}
                     direction="row"
-                    justify="space-evenly"
-                    alignItems="flex-end"
+                    justify="flex-start"
+                    alignItems="center"
                 >
 
-                    <Grid  direction="column" justify="flex-end" alignItems="flex-end"
+                    <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                         <Typography variant="h3">Hello! I'm John Koller...</Typography>
                         <Typography varient="p">
@@ -139,9 +139,9 @@ function App() {
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                         </Typography>
                     </Grid>
-                                        <Grid justify="center" alignItems="center"
-                        item xs={12} sm={6}>
-                        
+                    <Grid justify="flex-start" alignItems="center"
+                        item xs={12} sm={5}>
+                        <img src="https://via.placeholder.com/350"></img>
                     </Grid>
                 </Grid>
             </Container>
