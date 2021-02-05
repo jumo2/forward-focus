@@ -33,8 +33,8 @@ function App() {
                         item xs={12} sm={12}>
                         <Card className="card-dark" elevation={0}>
                             <CardContent>
-                                <h1>Helping individuals put their future in <em style={{ color: "red" }}>focus</em>.</h1>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                <Typography variant="h3">Helping individuals put their future in <em style={{ color: "red" }}>focus</em>.</Typography>
+                                <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
                             </CardContent>
                             <CardActions className="card-action-custom">
                                 <Button className="join-now-button" variant="outlined" color="red">Join Now</Button>
@@ -62,27 +62,28 @@ function App() {
                     container
                     spacing={0}
                     direction="row"
-                    justify="space-evenly"
+                    justify="space-between"
                     alignItems="center"
                 >
                     <Grid justify="center" alignItems="center"
                         item xs={12} sm={6}>
                         <img className="analysis-svg" src={analysis}></img>
                     </Grid>
-                    <Grid direction="column" justify="flex-end" alignItems="flex-end"
+                    <Grid direction="column" justify="space-between" alignItems="flex-end"
                         item xs={12} sm={6}>
                         <Paper elevation="0">
-                            <h2>Leadership Coaching</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <Typography variant="h3">Leadership Coaching</Typography>
+                            <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
                         </Paper>
+                        <br></br>
                         <Paper elevation="0">
-                            <h2>Personal Mentorship</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <Typography variant="h3">Personal Mentorship</Typography>
+                            <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
                         </Paper>
                     </Grid>
                 </Grid>
 
-
+                    <br></br>
 
                 {/* <Grid container spacing={2}>
                     <Grid justify="flex-end" alignItems="flex-end"
@@ -131,7 +132,12 @@ function App() {
 
                     <Grid  direction="column" justify="flex-end" alignItems="flex-end"
                         item xs={12} sm={6}>
-                        
+                        <Typography variant="h3">Hello! I'm John Koller...</Typography>
+                        <Typography varient="p">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </Typography>
                     </Grid>
                                         <Grid justify="center" alignItems="center"
                         item xs={12} sm={6}>
