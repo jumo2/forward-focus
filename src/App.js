@@ -77,12 +77,17 @@ function App() {
                         item xs={12} sm={6}>
                         <Paper elevation="0">
                             <Typography variant="h3">Leadership Coaching</Typography>
-                            <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
+                            <Typography variant="p" paragraph={true}>Forward Focus offers leaders the support they need to be effective. We help leaders find deeper understanding of themselves and others. They learn to act with intention, building high-trust environments that support belonging and performance.</Typography>
+                            <Typography variant="p" paragraph={true}>With Forward Focus, emerging leaders address self-limiting beliefs and push their leadership to the next level. Seasoned leaders can learn to reinvigorate their style to match today’s talent needs.</Typography>
+                            <Typography variant="p" paragraph={true}>At Forward Focus, our leadership development program will be tailored to meet the specific needs and goals of your organization. The content can be delivered in the form of: <strong><em>one on one coaching</em></strong>, <strong><em>group coaching</em></strong>, <em><strong>SWOT analysis</strong></em> or a customized approach to fit your needs and schedule. We will come along side you and be your accountability partner to implement the principles learned to move your organization forward. </Typography>
                         </Paper>
                         <br></br>
                         <Paper elevation="0">
-                            <Typography variant="h3">Personal Mentorship</Typography>
-                            <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
+                            <Typography variant="h3">Personal Development</Typography>
+                            <Typography variant="p" paragraph={true}>There's nothing worse than rolling through life in the passenger's seat. You wake up, go to work, and drift through each day with no direction or driving force behind anything that you do. Then you drive home, flip through your favorite shows, go to bed, and repeat that same cycle the next day. Weekdays all run together, and you find yourself trying to pass the time and accomplishing nothing until the weekend rolls around so you can relax, unwind, and finally enjoy yourself. But, at some point, the weekends have no meaning either, and you have no real reason to enjoy them and like the weekdays, they all start to run together too. You see people around you moving ahead and you start to wonder what they have that you don't, and what they're doing that you're not.</Typography>
+                            <Typography variant="p" paragraph={true}>At Forward Focus we will give you the direction, skills and a mental “toughness” that all successful and happy people have. We will show you that success and happiness is a learned skill and not some magic bullet, an advantage that others have over you or something they are born with.
+
+</Typography>
                         </Paper>
                     </Grid>
                 </Grid>
@@ -140,12 +145,11 @@ function App() {
 
                     <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
-                        <Typography variant="h3">Hello! I'm John Koller...</Typography>
-                        <Typography varient="p">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </Typography>
+                        <Typography variant="h3">I'm John Koller...</Typography>
+                        <Typography varient="p" paragraph={true}>I have spent the last 27 years in the Fire Service, moving up the ranks and developing people to make the organization, and the people in it, better than they ever have been.</Typography>
+                    <Typography varient="overline" paragraph={true}>Don't get it confused <em> I am not special </em> I am just like you</Typography>
+                    <Typography varient="p" paragraph={true}>I have spent the last twenty (20) plus years figuring out how to master mental toughness and develop the skills needed to take complete control of my life and to be successful in anything you do.</Typography>
+                    <Typography varient="p" paragraph={true}>I have learned what it takes and my ABSOLUTE OBLIGATION to others is that I teach them now what took me over twenty (20) years to learn on my own. It will take things like confidence, dedication, stamina, determination, courage and a belief in yourself. These are NOT traits you are born with but you can absolutely learn them and how to harness them to improve every facet of your life.</Typography>
                     </Grid>
                     <Grid justify="flex-start" alignItems="center"
                         item xs={12} sm={5}>
