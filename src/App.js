@@ -36,11 +36,11 @@ function App() {
                         item xs={12} sm={12}>
                         <Card className="card-dark" elevation={0}>
                             <CardContent>
-                                <Typography variant="h3">Helping individuals put their future in <em style={{ color: "red" }}>focus</em>.</Typography>
+                                <Typography variant="h3">Making the Uncommon Common...</Typography>
                                 <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
                             </CardContent>
                             <CardActions className="card-action-custom">
-                                <Button className="join-now-button" variant="outlined" color="red">Join Now</Button>
+                                <Button className="join-now-button" variant="outlined" color="red">Level Up!</Button>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -79,7 +79,7 @@ function App() {
                             <Typography variant="h3">Leadership Coaching</Typography>
                             <Typography variant="p" paragraph={true}>Forward Focus offers leaders the support they need to be effective. We help leaders find deeper understanding of themselves and others. They learn to act with intention, building high-trust environments that support belonging and performance.</Typography>
                             <Typography variant="p" paragraph={true}>With Forward Focus, emerging leaders address self-limiting beliefs and push their leadership to the next level. Seasoned leaders can learn to reinvigorate their style to match today’s talent needs.</Typography>
-                            <Typography variant="p" paragraph={true}>At Forward Focus, our leadership development program will be tailored to meet the specific needs and goals of your organization. The content can be delivered in the form of: <strong><em>one on one coaching</em></strong>, <strong><em>group coaching</em></strong>, <em><strong>SWOT analysis</strong></em> or a customized approach to fit your needs and schedule. We will come along side you and be your accountability partner to implement the principles learned to move your organization forward. </Typography>
+                            <Typography variant="p" paragraph={true}>At Forward Focus, our leadership development program will be tailored to meet the specific needs and goals of your organization. The content can be delivered in the form of: <strong><em style={{color: "red"}}>one on one coaching</em></strong>, <strong><em style={{color: "red"}}>group coaching</em></strong>, <em style={{color: "red"}}><strong>SWOT analysis</strong></em> or a <strong><em style={{color: "red"}}>customized approach</em></strong> to fit your needs and schedule. We will come along side you and be your accountability partner to implement the principles learned to move your organization forward. </Typography>
                         </Paper>
                         <br></br>
                         <Paper elevation="0">
@@ -146,7 +146,7 @@ function App() {
                     <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                         <Typography variant="h3">I'm John Koller...</Typography>
-                        <Typography varient="p" paragraph={true}>I have spent the last 27 years in the Fire Service, moving up the ranks and developing people to make the organization, and the people in it, better than they ever have been.</Typography>
+                        <Typography varient="p" paragraph={true}>I have spent the last 27 years in the Fire Service, moving up the ranks and developing people to make the organization, and the people in it, better than they ever have been. I have a bachelor’s degree in Public Administration and a Master’s Degree in Emergency Management. I also attended the National Fire Academy in their Executive Fire Officer Program which is a four year program in executive leadership.</Typography>
                     <Typography varient="overline" paragraph={true}>Don't get it confused <em> I am not special </em> I am just like you</Typography>
                     <Typography varient="p" paragraph={true}>I have spent the last twenty (20) plus years figuring out how to master mental toughness and develop the skills needed to take complete control of my life and to be successful in anything you do.</Typography>
                     <Typography varient="p" paragraph={true}>I have learned what it takes and my ABSOLUTE OBLIGATION to others is that I teach them now what took me over twenty (20) years to learn on my own. It will take things like confidence, dedication, stamina, determination, courage and a belief in yourself. These are NOT traits you are born with but you can absolutely learn them and how to harness them to improve every facet of your life.</Typography>

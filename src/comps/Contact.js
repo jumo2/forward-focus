@@ -67,7 +67,7 @@ function Contact() {
                 <Grid style={{ color: "white" }} direction="column" justify="flex-end" alignItems="flex-start"
                     item xs={12} sm={6}>
                     <br></br>
-                    <Typography variant="h3" >Connect with Me</Typography>
+                    <Typography variant="h3" >Are you ready to LEVEL UP?</Typography>
                     <br></br>
                     <form className={classes.root} noValidate autoComplete="off">
                         <TextField color="white" id="firstName" label="First Name:" fullWidth="true" />
