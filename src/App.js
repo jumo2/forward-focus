@@ -1,9 +1,7 @@
 import './App.css';
 import Contact from './comps/Contact'
-import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
-import logo from './assets/FF_NoBack_FF_Only.svg'
 import appBarLogo from './assets/FF_NoBack_FullWord.svg'
 import analysis from './assets/analysis.svg'
 import AppBar from '@material-ui/core/AppBar'
@@ -26,13 +24,13 @@ function App() {
                     <IconButton edge="start" color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <img className="app-bar-logo" src={appBarLogo} />
+                    <img className="app-bar-logo" alt="" src={appBarLogo} />
                 </Toolbar>
             </AppBar>
             <div className="section section-dark" maxWidth="md" className="App">
                 <Container>
                 <Grid container spacing={2}>
-                    <Grid justify="flex-end" alignItems="flex-end"
+                    <Grid alignItems="flex-end"
                         item xs={12} sm={12}>
                         <Card className="card-dark" elevation={0}>
                             <CardContent>
@@ -71,7 +69,7 @@ function App() {
                 >
                     <Grid justify="center" alignItems="center"
                         item xs={12} sm={6}>
-                        <img className="analysis-svg" src={analysis}></img>
+                        <img className="analysis-svg" alt="" src={analysis}></img>
                     </Grid>
                     <Grid direction="column" justify="space-between" alignItems="flex-end"
                         item xs={12} sm={6}>
@@ -153,7 +151,7 @@ function App() {
                     </Grid>
                     <Grid justify="flex-start" alignItems="center"
                         item xs={12} sm={5}>
-                        <img src="https://via.placeholder.com/350"></img>
+                        <img src="https://via.placeholder.com/350" alt=""></img>
                     </Grid>
                 </Grid>
                 <br></br>

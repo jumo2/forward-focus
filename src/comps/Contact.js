@@ -2,11 +2,8 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
 import logo from '../assets/FF_NoBack_FF_Only.svg'
-import Toolbar from '@material-ui/core/Toolbar'
-import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid';
-import { Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -62,7 +59,7 @@ function Contact() {
                 <Grid direction="column" justify="flex-end" alignItems="center"
                     item xs={12} sm={6}>
                     <br></br>
-                    <img className="Logo" src={logo}></img>
+                    <img className="Logo" src={logo} alt=""></img>
                 </Grid>
                 <Grid style={{ color: "white" }} direction="column" justify="flex-end" alignItems="flex-start"
                     item xs={12} sm={6}>
