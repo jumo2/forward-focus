@@ -37,8 +37,8 @@ jobs:
           npm build
           
       # Deploy build to S3
-      -name: Deploy to S3
-       uses: jakejarvis/s3-sync-action@master
+      - name: Deploy to S3
+      - uses: jakejarvis/s3-sync-action@master
        with: 
          args: --acl public-read --delete
        env: 
