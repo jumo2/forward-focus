@@ -27,7 +27,8 @@ function App() {
                     <img className="app-bar-logo" alt="" src={appBarLogo} />
                 </Toolbar>
             </AppBar>
-            <div className="section section-dark" maxWidth="md" className="App">
+            
+            <div id="App" maxWidth="md">
                 <Container>
                 <Grid container spacing={2}>
                     <Grid alignItems="flex-end"
