@@ -14,6 +14,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { Paper } from '@material-ui/core';
+import Review from './comps/Reviews'
 
 
 function App() {
@@ -158,6 +159,35 @@ function App() {
                 <br></br>
                 </Container>
             </div>
+
+
+
+            {/* Review Section */}
+
+            <div className="section" style={{ background: "white" }}>
+                <Container>
+                <Grid
+                    container
+                    spacing={4}
+                    direction="row"
+                    justify="flex-start"
+                    alignItems="center"
+                >
+                    <Grid direction="column" justify="flex-start" alignItems="center"
+                        item xs={12} sm={6}>
+                    <Typography variant="h2">Testimonials</Typography>
+                    
+                </Grid>
+                <Grid justify="flex-start" alignItems="center"
+                        item xs={12} sm={5}>
+                <Review></Review>
+                </Grid>
+                </Grid>
+                </Container>
+                <br></br>
+            </div>
+
+
                 
             <div className="wave-footer-container">
                 <br></br>
