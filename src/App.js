@@ -20,10 +20,6 @@ import { styled } from '@material-ui/core/styles';
 
 function App() {
 
-    const CustomMenu = styled(Menu)({
-        background: '#282c34'
-    })
-
     const CustomMenuItem = styled(MenuItem)({
         '&:hover': {
             backgroundColor: '#282c34 !important',
