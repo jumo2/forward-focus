@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import Review from './comps/Reviews'
 import { Menu, MenuItem, Paper } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 
@@ -203,6 +204,35 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                 <br></br>
                 </Container>
             </div>
+
+
+
+            {/* Review Section */}
+
+            <div className="section" style={{ background: "white" }}>
+                <Container>
+                <Grid
+                    container
+                    spacing={4}
+                    direction="row"
+                    justify="flex-start"
+                    alignItems="center"
+                >
+                    <Grid direction="column" justify="flex-start" alignItems="center"
+                        item xs={12} sm={6}>
+                    <Typography variant="h2">Testimonials</Typography>
+                    
+                </Grid>
+                <Grid justify="flex-start" alignItems="center"
+                        item xs={12} sm={5}>
+                <Review></Review>
+                </Grid>
+                </Grid>
+                </Container>
+                <br></br>
+            </div>
+
+
                 
             <div id="contact" className="wave-footer-container">
                 <br></br>
