@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import Contact from './comps/Contact'
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
@@ -13,20 +14,68 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { Paper } from '@material-ui/core';
+import { Menu, MenuItem, Paper } from '@material-ui/core';
+import { styled } from '@material-ui/core/styles';
 
 
 function App() {
+
+    const CustomMenu = styled(Menu)({
+        background: '#282c34'
+    })
+
+    const CustomMenuItem = styled(MenuItem)({
+        '&:hover': {
+            backgroundColor: '#282c34 !important',
+            color: 'white'
+          },
+        background: 'white',
+        color: '#282c34',
+        padding: '2px',
+        height: '5vh',
+        width: '20vw'
+      });
+
+const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleMenuItemClick =(event)=>{
+      console.log(event);
+  }
+
+
     return (
         <div>
             <AppBar position="static" elevation="0">
                 <Toolbar className="App">
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleClick}>
                         <MenuIcon />
                     </IconButton>
                     <img className="app-bar-logo" alt="" src={appBarLogo} />
                 </Toolbar>
+        
             </AppBar>
+
+        <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <CustomMenuItem onClick={handleMenuItemClick}>Home</CustomMenuItem>
+        <CustomMenuItem onClick={handleMenuItemClick}>Services</CustomMenuItem>
+        <CustomMenuItem onClick={handleMenuItemClick}>About</CustomMenuItem>
+        <CustomMenuItem onClick={handleMenuItemClick}>Testimonials</CustomMenuItem>
+        <CustomMenuItem onClick={handleMenuItemClick}>Contact</CustomMenuItem>
+      </Menu>
             
             <div id="App" maxWidth="md">
                 <Container>
@@ -59,7 +108,7 @@ function App() {
 
 
             {/* Services Section */}
-            <div className="section" style={{ background: "white" }} elevation={0}>
+            <div id="services" className="section" style={{ background: "white" }} elevation={0}>
                 <Container>
                 <Grid
                     container
@@ -132,7 +181,7 @@ function App() {
 
             {/* About Section */}
 
-            <div className="section" style={{ background: "white" }}>
+            <div id="about" className="section" style={{ background: "white" }}>
                 <Container>
                 <Grid
                     container
@@ -159,7 +208,7 @@ function App() {
                 </Container>
             </div>
                 
-            <div className="wave-footer-container">
+            <div id="contact" className="wave-footer-container">
                 <br></br>
                 <Contact />
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,224L60,229.3C120,235,240,245,360,250.7C480,256,600,256,720,234.7C840,213,960,171,1080,138.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
