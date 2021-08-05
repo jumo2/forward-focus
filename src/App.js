@@ -125,52 +125,29 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                             <Typography variant="p" paragraph={true}>Forward Focus offers leaders the support they need to be effective. We help leaders find deeper understanding of themselves and others. They learn to act with intention, building high-trust environments that support belonging and performance.</Typography>
                             <Typography variant="p" paragraph={true}>With Forward Focus, emerging leaders address self-limiting beliefs and push their leadership to the next level. Seasoned leaders can learn to reinvigorate their style to match today’s talent needs.</Typography>
                             <Typography variant="p" paragraph={true}>At Forward Focus, our leadership development program will be tailored to meet the specific needs and goals of your organization. The content can be delivered in the form of: <strong><em style={{color: "red"}}>one on one coaching</em></strong>, <strong><em style={{color: "red"}}>group coaching</em></strong>, <em style={{color: "red"}}><strong>SWOT analysis</strong></em> or a <strong><em style={{color: "red"}}>customized approach</em></strong> to fit your needs and schedule. We will come along side you and be your accountability partner to implement the principles learned to move your organization forward. </Typography>
+                            <ul>
+                                <li>Develop your leadership skills for more effectiveness</li>
+                                <li>Lead, motivate and engage your employees</li>
+                                <li>Develop others into leaders</li>
+                                <li>Improve personal and team performance</li> 
+                                <li>Solve your current organizational challenges</li>
+                                <li>Improve communication for results</li>
+                                <li>Grow to reach your full potential</li>
+                                <li>Communicate and fulfill the vision of your team or organization</li>
+                                <li>Improve your team or organization's culture</li>
+                            </ul>
                         </Paper>
                         <br></br>
                         <Paper elevation="0">
                             <Typography variant="h3">Personal Development</Typography>
                             <Typography variant="p" paragraph={true}>There's nothing worse than rolling through life in the passenger's seat. You wake up, go to work, and drift through each day with no direction or driving force behind anything that you do. Then you drive home, flip through your favorite shows, go to bed, and repeat that same cycle the next day. Weekdays all run together, and you find yourself trying to pass the time and accomplishing nothing until the weekend rolls around so you can relax, unwind, and finally enjoy yourself. But, at some point, the weekends have no meaning either, and you have no real reason to enjoy them and like the weekdays, they all start to run together too. You see people around you moving ahead and you start to wonder what they have that you don't, and what they're doing that you're not.</Typography>
                             <Typography variant="p" paragraph={true}>At Forward Focus we will give you the direction, skills and a mental “toughness” that all successful and happy people have. We will show you that success and happiness is a learned skill and not some magic bullet, an advantage that others have over you or something they are born with.
-
-</Typography>
+                            </Typography>
+                            <Typography varient="p" paragraph={true}>Remember that you are the measure of your own success. If a goal is hard for someone else, but easy for you, your goal simply sucks. Your goal should require you to develop as a person and push your limits. Ultimately, that’s what the purpose of every goal is – for you to develop as a person.  The ultimate goal of every one of your goals is for you to be great!  So if a goal doesn’t demand that of you, why set that goal?</Typography>
+                            <Typography varient="p" paragraph={true}>The bottom line is this: You are the greatest threat to your success. Your excuses are the greatest obstacles to your achievement.  You have to win the battle of the mind.  When you encounter yourself making an excuse, you have to actively take control of your thought process and deny the excuse access.</Typography>
                         </Paper>
                     </Grid>
                 </Grid>
-
-
-
-                {/* <Grid container spacing={2}>
-                    <Grid justify="flex-end" alignItems="flex-end"
-                     item xs={12} sm={4}>
-                         <Card  elevation={3}>
-                            <CardContent >
-                                <h2>Leadership Coaching</h2>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </CardContent>
-                         </Card>
-                     </Grid>
-                    <Grid justify="flex-end" alignItems="flex-end"
-                     item xs={12} sm={4}>
-                         <Card  elevation={3}>
-                            <CardContent>
-                               <h2>Youth Mentorship</h2>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </CardContent>
-                         </Card>
-                     </Grid>
-                                         <Grid justify="flex-end" alignItems="flex-end"
-                     item xs={12} sm={4}>
-                         <Card  elevation={3}>
-                            <CardContent>
-                                <h2>Adult Mentorship</h2>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </CardContent>
-                         </Card>
-                     </Grid>
-                </Grid>
-                <Grid>
-                    
-                </Grid> */}
                 <br></br>
             </Container>
             </div>

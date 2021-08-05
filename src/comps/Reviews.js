@@ -43,7 +43,6 @@ function Review(props)
 
 function Reviews(props)
 {
-    console.log(props)
     return (
     
 
