@@ -138,7 +138,8 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                             </ul>
                         </Paper>
                         <br></br>
-                        <Paper elevation="0">
+                    </Grid>
+                    <Paper elevation="0">
                             <Typography variant="h3">Personal Development</Typography>
                             <Typography variant="p" paragraph={true}>There's nothing worse than rolling through life in the passenger's seat. You wake up, go to work, and drift through each day with no direction or driving force behind anything that you do. Then you drive home, flip through your favorite shows, go to bed, and repeat that same cycle the next day. Weekdays all run together, and you find yourself trying to pass the time and accomplishing nothing until the weekend rolls around so you can relax, unwind, and finally enjoy yourself. But, at some point, the weekends have no meaning either, and you have no real reason to enjoy them and like the weekdays, they all start to run together too. You see people around you moving ahead and you start to wonder what they have that you don't, and what they're doing that you're not.</Typography>
                             <Typography variant="p" paragraph={true}>At Forward Focus we will give you the direction, skills and a mental “toughness” that all successful and happy people have. We will show you that success and happiness is a learned skill and not some magic bullet, an advantage that others have over you or something they are born with.
@@ -146,7 +147,6 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                             <Typography varient="p" paragraph={true}>Remember that you are the measure of your own success. If a goal is hard for someone else, but easy for you, your goal simply sucks. Your goal should require you to develop as a person and push your limits. Ultimately, that’s what the purpose of every goal is – for you to develop as a person.  The ultimate goal of every one of your goals is for you to be great!  So if a goal doesn’t demand that of you, why set that goal?</Typography>
                             <Typography varient="p" paragraph={true}>The bottom line is this: You are the greatest threat to your success. Your excuses are the greatest obstacles to your achievement.  You have to win the battle of the mind.  When you encounter yourself making an excuse, you have to actively take control of your thought process and deny the excuse access.</Typography>
                         </Paper>
-                    </Grid>
                 </Grid>
                 <br></br>
             </Container>
@@ -164,7 +164,10 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                     justify="flex-start"
                     alignItems="center"
                 >
-
+                    <Grid justify="flex-start" alignItems="center"
+                        item xs={12} sm={6}>
+                        <img src="https://via.placeholder.com/350" alt=""></img>
+                    </Grid>
                     <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                         <Typography variant="h3">I'm John Koller...</Typography>
@@ -173,10 +176,7 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                     <Typography varient="p" paragraph={true}>I have spent the last twenty (20) plus years figuring out how to master mental toughness and develop the skills needed to take complete control of my life and to be successful in anything you do.</Typography>
                     <Typography varient="p" paragraph={true}>I have learned what it takes and my ABSOLUTE OBLIGATION to others is that I teach them now what took me over twenty (20) years to learn on my own. It will take things like confidence, dedication, stamina, determination, courage and a belief in yourself. These are NOT traits you are born with but you can absolutely learn them and how to harness them to improve every facet of your life.</Typography>
                     </Grid>
-                    <Grid justify="flex-start" alignItems="center"
-                        item xs={12} sm={5}>
-                        <img src="https://via.placeholder.com/350" alt=""></img>
-                    </Grid>
+
                 </Grid>
                 <br></br>
                 </Container>
