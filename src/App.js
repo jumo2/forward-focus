@@ -154,28 +154,42 @@ const [anchorEl, setAnchorEl] = React.useState(null);
 
 
             {/* About Section */}
-
+            {/* Code Commented until picture is provided*/}
             <div id="about" className="section" style={{ background: "white" }}>
                 <Container>
                 <Grid
-                    container
+                    /* container
                     spacing={4}
                     direction="row"
                     justify="flex-start"
+                    alignItems="center" */
+
+                    container
+                    spacing={0}
+                    direction="row"
+                    justify="space-between"
                     alignItems="center"
                 >
-                    <Grid justify="flex-start" alignItems="center"
+                    {/* <Grid justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                         <img src="https://via.placeholder.com/350" alt=""></img>
-                    </Grid>
-                    <Grid direction="column" justify="flex-start" alignItems="center"
+                    </Grid> */}
+{/*                     <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                         <Typography variant="h3">I'm John Koller...</Typography>
                         <Typography varient="p" paragraph={true}>I have spent the last 27 years in the Fire Service, moving up the ranks and developing people to make the organization, and the people in it, better than they ever have been. I have a bachelor’s degree in Public Administration and a Master’s Degree in Emergency Management. I also attended the National Fire Academy in their Executive Fire Officer Program which is a four year program in executive leadership. I was also recently awarded the 2020 Fire Chief of the Year for the State of Illinois.</Typography>
                     <Typography varient="overline" paragraph={true}>Don't get it confused <em> I am not special </em> I am just like you</Typography>
                     <Typography varient="p" paragraph={true}>I have spent the last twenty (20) plus years figuring out how to master mental toughness and develop the skills needed to take complete control of my life and to be successful in anything you do.</Typography>
                     <Typography varient="p" paragraph={true}>I have learned what it takes and my ABSOLUTE OBLIGATION to others is that I teach them now what took me over twenty (20) years to learn on my own. It will take things like confidence, dedication, stamina, determination, courage and a belief in yourself. These are NOT traits you are born with but you can absolutely learn them and how to harness them to improve every facet of your life.</Typography>
-                    </Grid>
+                    </Grid> */}
+
+                        <Paper elevation="0">
+                        <Typography variant="h3">I'm John Koller...</Typography>
+                        <Typography varient="p" paragraph={true}>I have spent the last 27 years in the Fire Service, moving up the ranks and developing people to make the organization, and the people in it, better than they ever have been. I have a bachelor’s degree in Public Administration and a Master’s Degree in Emergency Management. I also attended the National Fire Academy in their Executive Fire Officer Program which is a four year program in executive leadership. I was also recently awarded the 2020 Fire Chief of the Year for the State of Illinois.</Typography>
+                    <Typography varient="overline" paragraph={true}>Don't get it confused <em> I am not special </em> I am just like you</Typography>
+                    <Typography varient="p" paragraph={true}>I have spent the last twenty (20) plus years figuring out how to master mental toughness and develop the skills needed to take complete control of my life and to be successful in anything you do.</Typography>
+                    <Typography varient="p" paragraph={true}>I have learned what it takes and my ABSOLUTE OBLIGATION to others is that I teach them now what took me over twenty (20) years to learn on my own. It will take things like confidence, dedication, stamina, determination, courage and a belief in yourself. These are NOT traits you are born with but you can absolutely learn them and how to harness them to improve every facet of your life.</Typography>
+                        </Paper>
 
                 </Grid>
                 <br></br>
@@ -190,17 +204,17 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                 <Container>
                 <Grid
                     container
-                    spacing={4}
+                    spacing={0}
                     direction="row"
                     justify="flex-start"
-                    alignItems="center"
+                    alignItems="flex-start"
                 >
                     <Grid direction="column" justify="flex-start" alignItems="center"
                         item xs={12} sm={6}>
                     <Typography variant="h2">Testimonials</Typography>
                     
                 </Grid>
-                <Grid justify="flex-start" alignItems="center"
+                <Grid justify="flex-start" alignItems="flex-start"
                         item xs={12} sm={5}>
                 <Review></Review>
                 </Grid>
