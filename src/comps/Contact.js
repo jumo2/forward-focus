@@ -5,9 +5,7 @@ import logo from '../assets/FF_NoBack_FF_Only.svg'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Alert from '@material-ui/lab/Alert'
 import {useState} from "react";
-import Input from '@material-ui/core/Input';
 
 
 const useStyles = makeStyles((theme) => ({
