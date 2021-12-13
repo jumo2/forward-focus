@@ -72,10 +72,6 @@ function Contact() {
         message: "",
         })
 
-        return(
-            <Alert severity="success">This is a success alert — check it out!</Alert>
-        )
-
 
     }
 
