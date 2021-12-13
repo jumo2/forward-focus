@@ -5,11 +5,18 @@ import logo from '../assets/FF_NoBack_FF_Only.svg'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Alert from '@material-ui/lab/Alert'
+import {useState} from "react";
+import Input from '@material-ui/core/Input';
 
 
 const useStyles = makeStyles((theme) => ({
+
     root: {
+        '& .MuiInput-input':{
+            textColor: 'white',
+            color: 'white'
+        },
         '& label.Mui-focused': {
             color: 'red',
         },
@@ -20,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
         '& .MuiInput-underline:after': {
             borderBottomColor: 'white',
+            color:'white',
         },
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
@@ -28,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         },
             '& > *': {
                 margin: theme.spacing(1),
-                textColor: '#fcfcfb',
+                textColor: 'white',
                 fullWidth: 'true',
                 color: 'white',
                 border: 'red'
@@ -36,16 +44,45 @@ const useStyles = makeStyles((theme) => ({
             },
         },
         input: {
-            color: "white",
+            color: "red",
             border: '1px solid #FFF',
         }
     }));
 
 
-
-
 function Contact() {
     const classes = useStyles();
+    const [contactInfo, setContactInfo] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (event) => {
+        setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+        console.log(contactInfo)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(contactInfo)
+        setContactInfo({
+            firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+        })
+
+        return(
+            <Alert severity="success">This is a success alert — check it out!</Alert>
+        )
+
+
+    }
+
+
+
     return (
         <div>
         <Container className="section-dark" >
@@ -66,14 +103,14 @@ function Contact() {
                     <br></br>
                     <Typography variant="h3" >Are you ready to LEVEL UP?</Typography>
                     <br></br>
-                    <form className={classes.root} noValidate autoComplete="off">
-                        <TextField color="white" id="firstName" label="First Name:" fullWidth="true" />
-                        <TextField id="lastName" label="Last Name:" fullWidth="true" />
-                        <TextField id="email" label="Email Address:" fullWidth="true" />
-                        <TextField id="message " label="Message..." fullWidth="true" multiline="true" />
+                    <form className={classes.root} autoComplete="off">
+                        <TextField  name= "firstName" id="firstName" label="First Name:" fullWidth="true" value={contactInfo.firstName} onChange={handleChange}/>
+                        <TextField  name= "lastName" id="lastName" label="Last Name:" fullWidth="true" value={contactInfo.lastName} onChange={handleChange}/>
+                        <TextField name= "email" id="email" label="Email Address:" fullWidth="true"  type="email" value={contactInfo.email} onChange={handleChange}/>
+                        <TextField name="message" id="message " label="Message..." fullWidth="true" multiline="true" value={contactInfo.message} onChange={handleChange}/>
                         
                     </form>
-                    <Button className="join-now-button" style={{margin: "10px"}}variant="outlined" color="red">Submit</Button>
+                    <Button className="join-now-button" style={{margin: "10px"}}variant="outlined" color="red" onClick={handleSubmit}>Submit</Button>
                 </Grid>
             </Grid>
         </Container>
