@@ -4,6 +4,15 @@
   max-height: 100vh !important;
 }
 
+a {
+  color: #282c34;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white
+}
+
 #App {
   text-align: center;
   background-color: #282c34 !important;

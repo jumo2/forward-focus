@@ -44,9 +44,8 @@ const [anchorEl, setAnchorEl] = React.useState(null);
   };
 
   const handleMenuItemClick =(event)=>{
-      console.log(event);
+      setAnchorEl(null)
   }
-
 
     return (
         <div>
@@ -67,11 +66,11 @@ const [anchorEl, setAnchorEl] = React.useState(null);
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <CustomMenuItem onClick={handleMenuItemClick}>Home</CustomMenuItem>
-        <CustomMenuItem onClick={handleMenuItemClick}>Services</CustomMenuItem>
-        <CustomMenuItem onClick={handleMenuItemClick}>About</CustomMenuItem>
-        <CustomMenuItem onClick={handleMenuItemClick}>Testimonials</CustomMenuItem>
-        <CustomMenuItem onClick={handleMenuItemClick}>Contact</CustomMenuItem>
+        <a href="#App"><CustomMenuItem onClick={handleMenuItemClick} >Home</CustomMenuItem></a>
+        <a href="#services"><CustomMenuItem onClick={handleMenuItemClick} href="#services">Services</CustomMenuItem></a>
+        <a href="#about"><CustomMenuItem onClick={handleMenuItemClick}>About</CustomMenuItem></a>
+        <a href="#reviews"><CustomMenuItem onClick={handleMenuItemClick}>Testimonials</CustomMenuItem></a>
+        <a href="#contact"><CustomMenuItem onClick={handleMenuItemClick}>Contact</CustomMenuItem></a>
       </Menu>
             
             <div id="App" maxWidth="md">
@@ -85,7 +84,7 @@ const [anchorEl, setAnchorEl] = React.useState(null);
                                 <Typography variant="p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</Typography>
                             </CardContent>
                             <CardActions className="card-action-custom">
-                                <Button className="join-now-button" variant="outlined" color="red">Level Up!</Button>
+                                <Button onClick={() => {window.location="#contact"}} className="join-now-button" variant="outlined" color="red">Level Up!</Button>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -200,7 +199,7 @@ const [anchorEl, setAnchorEl] = React.useState(null);
 
             {/* Review Section */}
 
-            <div className="section" style={{ background: "white" }}>
+            <div id="reviews" className="section" style={{ background: "white" }}>
                 <Container>
                 <Grid
                     container
