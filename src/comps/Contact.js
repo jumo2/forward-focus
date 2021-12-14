@@ -64,12 +64,26 @@ function Contact() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(contactInfo)
-        setContactInfo({
-            firstName: "",
-        lastName: "",
-        email: "",
-        message: "",
+        
+        //validate email address
+        //validate
+
+        fetch('https://nsyvipax61.execute-api.us-east-1.amazonaws.com/prod', {
+            method: "POST",
+            body: JSON.stringify(contactInfo),
+            headers: {
+                'Accept': "application/json",
+                'Content-Type': 'application/json',
+                'x-api-key': 'JDe4lSwJkfaqqeURQULdD8T7LEhVO9a93hAbrO8L'
+            },
+        }).then((response) => {
+            alert("Message Sent.")
+            setContactInfo({
+                firstName: "",
+                lastName: "",
+                email: "",
+                message: "",
+                })
         })
 
 
